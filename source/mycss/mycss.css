@@ -39,3 +39,7 @@
     color: gray;
     margin-left: 10px;
 }
+
+.card:active{
+    background-color: gold;
+}
