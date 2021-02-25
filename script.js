@@ -1,7 +1,10 @@
 var app = angular.module('myApp',[]);
 
-app.controller('myCtrl', function($scope){
+app.controller('myCtrl', function($scope, $window){
     $scope.data = data;
+    $scope.showAlert = function ($index) {
+        $window.alert("Succes to Buy " + data[$index].title);
+    }
 });
 
 var data = [{
